@@ -1,0 +1,530 @@
+
+
+.menu-container{
+  
+background-color: #202525;
+
+font-weight: bold;
+height:  100px ;
+
+width: 100%;
+box-sizing: border-box;
+position:fixed;
+padding: auto;
+
+
+
+}
+ 
+
+.logo {float: left;
+    position: absolute;
+
+    left: 10px;
+    position:fixed;
+  width: 9%;
+    
+}
+
+.flex {max-width: 100%}
+
+.home,.contatti
+{
+  float: right;
+  padding: 12px ;
+  background-color: none;
+  border: 2px solid #ffa500; 
+  margin-left: 0px;
+  margin-top: 30px;
+  border-radius: 5px;
+ margin-right: 25px;
+ width: 100px;
+ text-align: center;
+ color: #ffa500;
+ font-size: 18px;
+}
+
+.paragraphs{
+    
+   text-align: center;
+  
+}
+h1,h2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+        color: #B0B0B0;
+   
+  width: auto;
+  text-align: center;
+  font-size: 45px;
+    margin-top: 0px;
+  }
+
+  .photo{float: left;
+  
+    margin-right: 20px;
+    margin-top: -70px;
+    width: 70px;
+    height: 70px;
+    padding-bottom: 200px;
+    margin-left: 30px
+     ;
+  }
+  .paragraph1{
+      text-align: left;
+      margin-right: 50px;
+      margin-left:50px
+      
+  }
+  .paragraph2{
+    
+    margin-right: 50px;
+    margin-left: 50px
+    ;
+}
+  .button,.progetti {
+   
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #ffa500;    /* Dark gray */
+    border-radius: 5px;
+    width: 200px;
+    margin-left: 392px;
+   margin-top: 25px;
+   
+   font-size: 18px;  
+
+  
+  }
+
+ .chart{
+  
+   width: 400px;
+   height:auto;
+    
+   margin-left: 350px;
+   
+   
+  
+   
+
+ }
+ .specifiche{
+  
+  height:auto;
+   
+  margin-left: 800px;
+  
+  box-sizing: border-box;
+  padding-bottom: 400px;
+  margin-top: -400px;
+  text-align: left;
+
+ }
+ .specifiche2{
+  
+  height:auto; 
+  margin-left: 550px;
+    box-sizing: border-box;
+  padding-bottom: 50px;
+  margin-top: -350px;
+  padding-left: 350px;
+  text-align: left;
+margin-right: 50px;
+ }
+ 
+.logo-S2i{float: right;
+    margin: 7px;
+}
+  
+
+
+
+  
+  .footer {
+    height: 200px;
+    background-color: #202525;
+    text-align: center;    /* Light blue */
+  }
+    
+  .icon{
+text-align: center;
+ margin-top: -100px;
+ margin-left: -550px;
+
+
+
+}
+
+.form{
+    height: 300px;
+    background-color: #2d6bb3;
+
+width: 500px;
+background-color: rgba(255, 255, 240, 0.151);
+border: 2px solid #ffa500; 
+text-align: center;
+height: 380px;
+float: center;
+margin-bottom: 20px;
+margin-left: 315px;
+
+}
+
+.form-row textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+  
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+  
+    min-height: 100px;
+    min-width: autopx;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+  }
+  .form-row{margin-top: 20px;}
+  .form-row .instructions {
+    color: #999999;
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  
+
+.form-row button {
+ 
+
+
+  padding: 10px 40px;
+  cursor: pointer;
+  color: #FFF;
+  background-color: #ffa500;    /* ora è in arancione */
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #5D6063;    /* Dark gray */
+  border-radius: 5px;
+  width: 200px;
+  margin: auto;
+  box-sizing: border-box;
+ font-size: 16px;
+  cursor: pointer;}
+
+  .informa{
+    margin-top: -50px;
+    margin-left: 550px;
+    padding:auto
+  }
+
+  
+
+  body{
+    color: white;
+    
+      background-color: #222728;
+      font-family: 'Roboto';
+      width: 100%;
+      
+      
+    
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  .menu a,.progetti a{
+    color: #ffa500;
+    text-decoration: none;
+  }
+  .menu a:hover, .progetti a:hover{
+color: white;
+transition: 0.8s;
+
+  }
+  
+
+
+
+
+  /* Mobile Styles */
+  @media only screen and (max-width: 400px) {
+    
+
+    
+    .logo{
+      width: 15%;
+      margin-top:50px
+    }
+    
+    
+
+    .menu-container{
+margin-top: -120px;
+height: 120px;
+margin-left: -50px;
+width:450px;
+position: fixed;
+font-weight: bold;
+height:  120px ;
+box-sizing: border-box;
+position:fixed;
+
+
+    }
+
+    .home,.contatti{
+      margin-top: 65px;
+      padding:5px;
+      
+      float: right
+    }
+
+    h1,h2{
+      margin-top: 70px;
+      width: 100%;
+      margin-left: -0px;
+      padding-bottom: 50px;
+  
+    }
+
+   .photo{
+    width: 60%;
+    margin-top: 550px;
+    margin-left: -11px;
+    margin-top: -120px;
+float:none;
+
+   }
+
+   .chart{
+    width: 75%;
+    margin-left: 90px;
+     margin-top: -70px;
+     padding-top: 70px;
+     padding-bottom: 200px;
+     float:none;
+   }
+  
+   .specifiche{
+   margin-left: 200px;
+   margin-top: -650px;
+   float:none;
+   padding-bottom: 550px;
+   padding-left: -50px;
+   }
+
+   
+   .specifiche2{
+    margin-left: 50px;
+    margin-top: -200px;
+    padding: 1px;
+    }
+   
+    .progetti{
+      margin-left: 70px;
+     
+    }
+  .paragraph1{
+    
+    width: 100%;
+    padding-right: -11px;
+    box-sizing: border-box;
+    height:auto;
+   
+  margin-left: 1px;
+  margin-right: 1px;
+  
+
+  
+  
+  
+  
+  }
+
+  .paragraph2{
+    width: 100%;
+    padding-right: -11px;
+    box-sizing: border-box;
+    height:auto;
+   
+  margin-left: 1px;
+  margin-right: 1px;
+  
+
+  }
+
+.form{
+  margin-left: 1px;
+  margin-top: -50px;
+  width:390px;
+  margin-right:1px
+}
+
+.footer{
+  margin-top: -50px;
+  width:100%;
+  height: 250px;
+  
+}
+.informa{
+  margin-left: 200px;
+  margin-right: 1px;
+}
+.icon{
+  margin-left: 1px;
+width:100px;
+  margin-top: -110px;
+}
+.instagram{
+  margin-left: -5px;
+  width:95px
+}
+
+  }
+
+  
+  
+  /* Tablet Styles */
+  @media only screen and (min-width: 401px) and (max-width: 960px) {
+    
+    .logo{
+      width: 13.5%
+    }
+    
+    .home, .contatti{
+      width: 60px;
+     margin-top: 20px;
+    }
+
+    .menu-container{
+margin-top: -100px;
+height: 85px;
+    }
+
+    h1{
+      margin-top: 100px;
+    }
+
+   .photo{
+    margin-top: -50px;
+    margin-left: -15px;
+width: 40%;
+box-sizing: border-box;
+padding-bottom: 0px;
+   }
+
+   .chart{
+    
+     width: 45%;
+     margin-left:200px;
+     margin-top: -20px;
+     box-sizing: border-box;
+   }
+  
+   .specifiche{
+      margin-left: 450px;
+    
+    box-sizing: border-box;
+    padding-bottom: 200px;
+    margin-top: -280px;
+    text-align: left;
+  
+   }
+   .specifiche2{
+    
+     
+    margin-left: 20px;
+      box-sizing: border-box;
+    padding-bottom: 50px;
+    margin-top: 50px;
+    padding-left: 30px;
+    
+    text-align: left;
+  margin-right: 50px;
+   }
+
+   .paragraph1{
+margin-top: -50px;
+   }
+
+   .form{
+margin-left: 55px;
+   }
+
+   .button,.progetti {
+   
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #ffa500;    /* Dark gray */
+    border-radius: 5px;
+    width: 200px;
+    margin-left: 142px;
+   margin-top: 25px;
+   
+   font-size: 18px;  
+
+  }
+
+  .icon{
+    margin-left: 25px;
+width:100px;
+  margin-top: -110px;
+   }
+   .instagram{
+    margin-left: -5px;
+    width:95px}
+
+
+   .informa{
+     margin-left: 300px;
+   }
+   }
+
+  
+  
+  /* Desktop Styles */
+  @media only screen and (min-width: 961px) {
+            
+    .menu-container{
+      height: 100px;
+    }
+    .logo{
+      width: 9%
+    }
+    
+    
+
+    .menu-container{
+margin-top: -100px;
+    }
+
+    h1{
+      margin-top: 100px;
+    }
+
+   .photo{
+    width: 25%;
+   }
+
+   .icon{
+    margin-left: 100px;
+  width:100px;
+    margin-top: -110px;
+  }
+
+  .instagram{
+    margin-left: -5px;
+    width:95px
+  }
+     
+   }
+  
+   
+  
