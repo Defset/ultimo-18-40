@@ -1,4 +1,4 @@
- <html>
+  <html>
   <html lang='en'>
   <head>
     <title>
@@ -6,17 +6,24 @@
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset='UTF-8'/>
-    <link rel='stylesheet' href='assets/css/style.css'/>
+    <link rel='stylesheet' href='assets\css\style.css'/>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+    emailjs.init("user_i7biF9DRJoYUrYuiKG75L");
+    })();
+    </script>
+
   </head>
 
   
-  <div class="menu-container">
+  <div class="menu-container"> 
   
 
     <div class="logo">
@@ -54,10 +61,10 @@
 
       <div class="specifiche">
        
-        <font color="#ffa500">Nome:</font> Elia Dorigatti <br>
-        <font color="#ffa500">Specie</font>Umano<br>
-        <font color="#ffa500">Età:</font> 25<br>
-        <font color="#ffa500">lingue:</font> ITA e ENG<br>
+        <font color="#ffa500">Name:</font> Elia Dorigatti <br>
+        <font color="#ffa500">Race</font> Human<br>
+        <font color="#ffa500">Age:</font> 25<br>
+        <font color="#ffa500">languages:</font> ITA & ENG<br>
       
       
       </div>
@@ -66,7 +73,7 @@
        
        <p>
         <font color="#ffa500">Classe: </font> Full stack marketer  </p>
-      Questa classe grazie alla sua vasta gamma di conoscenze padroneggia tutte le competenze del marketing digitale.
+      Questa classe grazie alla sua vasta gamma di conoscenze pradroneggia tutte competenze del marketing digitale.
       <p>  <font color="#ffa500">Abilità: </font> </p>
         <ul>
           <li>SempreInOrario</li>
@@ -81,7 +88,7 @@
     
        <p><font color="#ffa500">Storia:</font> Ho 25 anni e vivo a Trento.
        Esperto di Digital Marketing, comunicazione e tutto ciò che ne è correlato.
-       Penso che nei prossimi anni si avrà una transizione crescente dal mondo reale a quello digitale.
+       Penso che nei prossimi anni si avrà una transizione in crescita dal mondo reale a quello digitale.
        Stiamo passando dalla fase del "saper produrre" a quella del "capire cosa piace alle persone" e di questo io mi voglio occupare.</p>
 
        <p>Lavorando in cantiere 3 anni fa compresi appieno ciò che non volevo diventare e mi misi a lavorare per scoprire me stesso e le mie passioni.
@@ -108,7 +115,7 @@
         </p>
          <p>Ho gestito il budget l'intero online advertising: Campagna Google Ads, YouTube Ads e analisi dati con continui miglioramenti nella strategia funnel e buoni risultati.
 
-          Inoltre mi sono occupato della creazione dei contenuti organici e Lead generation utilizzando After effect, illustrator, Canva.
+          Inoltre mi sono occupato della creazione dei contenuti organici e Lead generation utilizzanto After effect, illustrator, Canva.
 
         </p>
         <p> Ho capito che il Digital Marketing per me è l’insieme di tre cose: L'unione delle mie passioni, il mio futuro, il futuro di tutti.
@@ -128,11 +135,11 @@
 <div class="form">
  <div class="form-row">
   <label for='full-name'>Name</label>
-  <input id='full-name' name='full-name' type='text'/>
+  <input id='fromName' name='full-name' type='text'/>
   </div>
   <div class='form-row'>
     <label for='email'>Email</label>
-    <input id='email'
+    <input id='toName'
            name='email'
            type='email'
            placeholder='joe@example.com'/>
@@ -140,7 +147,7 @@
   
   <div class='form-row'>
     <label for='abstract'>Text</label>
-    <textarea id='abstract' name='abstract'></textarea>
+    <textarea id='msg' name='abstract'></textarea>
     <div class='instructions'>Describe your talk in 500 words or less</div>
   </div>
   <div class='form-row'>
@@ -154,7 +161,7 @@
   </div>
 
   <div class='form-row'>
-    <button>Submit</button>
+    <button onclick=`sendMail()`>Submit</button>
   </div>
  </div>  
 </div>
@@ -234,7 +241,28 @@ var myChart = new Chart(ctx, {
 });
 
 </script>
- 
+
+
+ <script>
+function sendMail(params){
+  var tempParams = {
+
+    from_name : document.getElementById("fromName").value,
+    to_name:document.getElementById("toName").value,
+    message: documente.getElementById("msg").value,
+  };
+  emailjs.send('gmail','template_yzkwjgi',temParams)
+  .then(function(res){
+console.log("succes",res.status);
+
+  })
+
+}
+
+
+
+
+ </script>
   </body>
   
 
