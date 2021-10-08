@@ -1,4 +1,4 @@
-  <html>
+   <html>
   <html lang='en'>
   <head>
     <title>
@@ -11,20 +11,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+    
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-    (function() {
-    emailjs.init("user_i7biF9DRJoYUrYuiKG75L");
-    })();
-    </script>
+   
 
   </head>
 
   
   <div class="menu-container"> 
-  
+
 
     <div class="logo">
       
@@ -161,7 +157,7 @@
   </div>
 
   <div class='form-row'>
-    <button onclick=`sendMail()`>Submit</button>
+    <button><a href="mailto:eliadorigattionline@gmail.com">Submit</a></button>
   </div>
  </div>  
 </div>
@@ -240,21 +236,6 @@ var myChart = new Chart(ctx, {
     }
 });
 
-
-function sendMail(params){
-  var tempParams = {
-
-    from_name : document.getElementById("fromName").value,
-    to_name:document.getElementById("toName").value,
-    message: document.getElementById("msg").value,
-  };
-  emailjs.send('gmail','template_yzkwjgi',tempParams)
-  .then(function(res){
-console.log("succes",res.status);
-
-  })
-
-}
 
 
 
